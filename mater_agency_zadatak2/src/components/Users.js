@@ -8,7 +8,6 @@ const Users = () => {
        fetch('https://random-data-api.com/api/v2/users?size=10')
        .then(response => response.json())
        .then(users => {
-            console.log(users);
             setUsers(users)
         })
         .catch(error => {
